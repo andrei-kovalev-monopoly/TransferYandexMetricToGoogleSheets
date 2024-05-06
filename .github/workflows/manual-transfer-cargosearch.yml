@@ -1,4 +1,4 @@
-name: Manual Transfer Cron Job
+name: Manual Transfer Cargosearch
 
 on:
   workflow_dispatch
