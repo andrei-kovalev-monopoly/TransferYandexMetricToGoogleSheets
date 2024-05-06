@@ -13,6 +13,7 @@ hit_field_list = [
 ]
 
 visit_field_list = [
+    "ym:s:counterID",
     "ym:s:date",
     "ym:s:visitID",
     "ym:s:dateTimeUTC",
@@ -22,7 +23,7 @@ visit_field_list = [
     "ym:s:deviceCategory",
     "ym:s:clientID",
     "ym:s:lastsignTrafficSource",
-    "ym:s:lastsignSearchEngine",
+    "ym:s:lastsignSearchEngineRoot",
     "ym:s:bounce",
     "ym:s:isNewUser",
     "ym:s:lastsignUTMCampaign",
