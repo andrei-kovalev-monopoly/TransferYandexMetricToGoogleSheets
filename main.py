@@ -10,8 +10,8 @@ from api_fields import hit_field_list, visit_field_list
 
 if __name__ == "__main__":
     token = os.getenv("TOKEN")
-    counter_id1 = os.getenv("COUNTER_PLATFORM")
-    counter_id2 = os.getenv("COUNTER_CARGOSEARCH")  # Add another counter ID
+    counter_platform = os.getenv("COUNTER_PLATFORM")
+    counter_cargosearch = os.getenv("COUNTER_CARGOSEARCH")  # Add another counter ID
     api_host_url = "https://api-metrika.yandex.ru"
 
     start_date = os.getenv("START_DATE")
@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
     for data_elem in data_list_platform:
         data = get_log_data(api_host_url,
-                            counter_id,
+                            counter_platform,
                             token,
                             data_elem["source"],
                             start_date,
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     for data_elem in data_list_cargosearch:
         data = get_log_data(api_host_url,
-                            counter_id,
+                            counter_cargosearch,
                             token,
                             data_elem["source"],
                             start_date,
