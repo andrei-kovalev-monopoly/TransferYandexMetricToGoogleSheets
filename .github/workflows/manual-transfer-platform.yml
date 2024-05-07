@@ -7,6 +7,7 @@ env:
   COUNTER_ID: ${{secrets.COUNTER_PLATFORM}}
   GOOGLE_SERVICE_ACCOUNT: ${{secrets.GOOGLE_SERVICE_ACCOUNT}}
   START_DATE: ${{secrets.START_DATE}}
+  END_DATE: ${{secrets.END_DATE}}  
   TOKEN: ${{secrets.TOKEN}}
   VISIT_SHEET_URL: ${{secrets.VISIT_SHEET_URL_PLATFORM}}
 
