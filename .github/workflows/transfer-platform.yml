@@ -1,16 +1,15 @@
-name: Transfer Cron Job
+name: Transfer Platform
 
 on:
   schedule:
     - cron: "13 01 * * *"
 
 env:
-  COUNTER_ID: ${{secrets.COUNTER_ID}}
+  COUNTER_ID: ${{secrets.COUNTER_PLATFORM}}
   GOOGLE_SERVICE_ACCOUNT: ${{secrets.GOOGLE_SERVICE_ACCOUNT}}
-  HIT_SHEET_URL: ${{secrets.HIT_SHEET_URL}}
   START_DATE: ${{secrets.START_DATE}}
   TOKEN: ${{secrets.TOKEN}}
-  VISIT_SHEET_URL: ${{secrets.VISIT_SHEET_URL}}
+  VISIT_SHEET_URL: ${{secrets.VISIT_SHEET_URL_PLATFORM}}
 
 jobs:
   build:
