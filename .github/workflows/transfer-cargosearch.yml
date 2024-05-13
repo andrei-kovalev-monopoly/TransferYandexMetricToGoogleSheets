@@ -1,4 +1,4 @@
-name: Transfer Platform
+name: Transfer Cargosearch
 
 on:
   schedule:
